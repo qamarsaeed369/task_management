@@ -1,0 +1,6 @@
+<h1>Task Management System</h1>
+<ul>
+    {% for task in tasks %}
+        <li>{{ task.title }} - {{ task.status }} <a href="{% url 'add_task' %}">➕ Add Task</a></li>
+    {% endfor %}
+</ul>
